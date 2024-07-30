@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins&family=Sometype+Mono&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  background: linear-gradient(to right, #fef7ac 5%, #feb4ec 95%);
+}
+
+header {
+  background-color: #e74c3c;
+  padding: 13px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+
+.nav-links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: "PT Serif", serif;
+}
+
+/* Burger Menu */
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e74c3c;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
+
+  .nav-links.nav-active {
+    height: 500px;
+    opacity: 1;
+    margin-top: 65px;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .burger {
+    display: block;
+  }
+}

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins&family=Sometype+Mono&display=swap");
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.text {
+  padding: 70px;
+  width: 55%;
+  font-size: 17px;
+  height: 420px;
+  box-sizing: border-box;
+}
+
+.text h1 {
+  padding: 20px;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "PT Serif", serif;
+}
+
+.text p {
+  padding: 20px;
+  width: 87%;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.text button {
+  margin-left: 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+/* responsive*/
+
+@media (max-width: 1200px) {
+  .text {
+    padding: 50px;
+    width: 60%;
+    height: auto;
+  }
+
+  .text h1 {
+    font-size: 40px;
+  }
+
+  .text p {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .text {
+    padding: 30px;
+    width: 50%;
+    height: auto;
+  }
+
+  .text h1 {
+    font-size: 35px;
+  }
+
+  .text p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .text button {
+    padding: 10px 40px;
+    font-size: 0.9em;
+  }
+
+  .image img {
+    height: 400px;
+    max-width: 100%;
+  }
+  .image-grid img {
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+  }
+
+  .second-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .text h1 {
+    font-size: 30px;
+  }
+
+  .text p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .text button {
+    padding: 10px 30px;
+    font-size: 0.8em;
+  }
+
+  .image {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text {
+    padding: 15px;
+  }
+
+  .text h1 {
+    font-size: 25px;
+  }
+
+  .text p {
+    font-size: 13px;
+  }
+
+  .text button {
+    padding: 10px 20px;
+    font-size: 0.7em;
+  }
+
+  .image img {
+    height: 300px;
+    max-width: 90%;
+  }
+}

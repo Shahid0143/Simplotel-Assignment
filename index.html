@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/hero.css" />
+    <link rel="stylesheet" href="/css/bottom.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="#"><strong>Home</strong></a>
+          </li>
+          <li>
+            <a href="#"><strong>Order</strong></a>
+          </li>
+          <li>
+            <a href="#"><strong>Food</strong></a>
+          </li>
+          <li>
+            <a href="#"><strong>Restaurant</strong></a>
+          </li>
+          <li>
+            <a href="#"><strong>Testimonials</strong></a>
+          </li>
+          <li>
+            <a href="#"><strong>Contact Us</strong></a>
+          </li>
+        </ul>
+        <div class="burger">
+          <img src="/images/menu-bar.png" alt="Menu" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- First Section -->
+    <section class="content">
+      <div class="text">
+        <h1>Lorem Ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id
+          est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus
+          euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam
+          ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec
+          justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta
+          viverra.
+        </p>
+        <button>Click Me</button>
+      </div>
+      <div class="image">
+        <img
+          src="/images/pexels-robin-stickel-70497.jpg"
+          alt="Burger and Fries"
+        />
+      </div>
+    </section>
+
+    <!-- Second Section -->
+    <section class="second-section">
+      <div class="image-grid">
+        <div class="column">
+          <img
+            src="/images/pexels-rachel-claire-6752433.jpg"
+            alt="Image 1"
+            class="image1"
+          />
+          <img
+            src="/images/pexels-eva-bronzini-6141651.jpg"
+            alt="Image 2"
+            class="image2"
+          />
+        </div>
+        <div>
+          <img
+            src="/images/pexels-mister-mister-3434523.jpg"
+            alt="Image 3"
+            class="image3"
+          />
+        </div>
+      </div>
+      <div class="text1">
+        <p>LOREM IPSUM</p>
+        <h1>LOREM IPSUM SET ADEMIR</h1>
+        <p>
+          Click
+          <span><img src="/images/icons8-arrow-30.png" alt="Arrow" /></span>
+        </p>
+      </div>
+    </section>
+
+    <script>
+      document.querySelector(".burger").addEventListener("click", () => {
+        document.querySelector(".nav-links").classList.toggle("nav-active");
+      });
+    </script>
+  </body>
+</html>

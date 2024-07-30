@@ -1,1 +1,0 @@
-# Simplotel-Assignment
