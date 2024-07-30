@@ -17,9 +17,11 @@
 
 .text h1 {
   padding: 20px;
-  font-size: 50px;
-  letter-spacing: 2px;
-  font-family: "PT Serif", serif;
+  font-size: 40px;
+  letter-spacing: 6px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: normal;
 }
 
 .text p {
@@ -27,17 +29,21 @@
   width: 87%;
   height: 200px;
   box-sizing: border-box;
+  line-height: 25px;
+  font-size: 14px;
+  font-family: "Poppins";
 }
 
 .text button {
   margin-left: 20px;
-  background-color: #e74c3c;
+  background-color: #fe7071;
   color: white;
   border: none;
-  padding: 10px 50px;
+  padding: 10px 60px;
   font-size: 1em;
   cursor: pointer;
   margin-top: 10px;
+  font-size: 12px;
 }
 
 .image {
@@ -89,6 +95,7 @@
   }
 
   .text button {
+    margin-top: 90px;
     padding: 10px 40px;
     font-size: 0.9em;
   }
@@ -156,11 +163,13 @@
 
   .text p {
     font-size: 13px;
+    margin-bottom: 50px;
   }
 
   .text button {
+    margin-top: 10%;
     padding: 10px 20px;
-    font-size: 0.7em;
+    font-size: 1.2em;
   }
 
   .image img {
